@@ -1,0 +1,27 @@
+body{
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h1{
+    background-color: tomato;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-bottom: 80px;
+}
+
+.lorem{
+    background-color: darkcyan;
+   
+}
+
+.centralizado{
+    background-color: darkorange;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+
+}

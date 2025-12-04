@@ -1,0 +1,7 @@
+aside{
+    background-color: #fdf9e7;
+    min-height: 400px;
+    padding: 20px;
+    border-left: 1px solid #e67e22;
+    flex-grow: 1;
+}

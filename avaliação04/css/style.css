@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #A020F0;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+header {
+    background-color: #8B008B;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+}
+
+.btn {
+    background-color: #A020F0;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn:hover {
+    background-color: #6A5ACD;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3:last-of-type {
+    color: #228B22;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-lista {
+    background-color: #ffffff;
+    border: 2px solid #8B008B;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card-lista ul {
+    list-style-type: none;
+    columns: 2;
+    padding-left: 0;
+}
+
+.card-lista li {
+    padding: 0.3rem 0;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+main h3 {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #A020F0;
+    display: inline-block;
+}
+
+footer {
+    background-color: #8B008B;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .card-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: calc(50% - 1.5rem * 1.5);
+        max-width: 350px;
+    }
+
+    .card-lista {
+        width: calc(100% - 1.5rem);
+        max-width: 600px;
+        margin-top: 1.5rem;
+    }
+}
+
+.carrinho-checkbox {
+    display: none;
+}
+
+.card-content .btn {
+    text-align: center;
+    cursor: pointer;
+    margin-top: auto; 
+    transition: background-color 0.3s;
+}
+
+.carrinho-checkbox:checked + img + .card-content .btn {
+    background-color: #228B22;
+    content: "ADICIONADO!";
+}
+
+.carrinho-checkbox:checked + img + .card-content .btn::before {
+    content: "✔ Adicionado ";
+}
+
+.carrinho-checkbox:checked + img + .card-content .btn i {
+    display: none;
+}
+
+#carrinho-resumo {
+    background-color: #ffffff;
+    border: 2px solid #A020F0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+#carrinho-itens-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 50px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: calc(33.33% - 1.5rem * 2 / 3);
+    }
+}

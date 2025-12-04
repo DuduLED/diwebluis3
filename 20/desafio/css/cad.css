@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #888383;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+div{
+    background-color: #888383;
+}
+h1{
+    color: whitesmoke;
+    border: 4px solid white;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 60px;
+}

@@ -1,0 +1,182 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px 5%;
+    flex-grow: 1;
+}
+
+main h1, main h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #ff4800;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f8f9fa;
+}
+
+form select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%20177.3c-2.4%202.4-5.8%204.6-9.6%204.6h-258c-3.8%200-7.2-2.2-9.6-4.6-4.8-4.8-4.8-12.5%200-17.3l133.5-133.5c4.8-4.8%2012.5-4.8%2017.3%200l133.5%20133.5c4.8%204.8%204.8%2012.5%200%2017.3z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px auto;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+    background-color: #ffffff;
+}
+
+.radio-group {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: 500;
+    color: #495057;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #adb5bd;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+.radio-group input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form input[type="file"] {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: transparent;
+}
+
+form hr {
+    border: 0;
+    height: 1px;
+    background-color: #dee2e6;
+    margin: 20px 0;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    box-sizing: border-box;
+}
+
+form input[type="submit"][value="Criar conta"] {
+    background-color: #28a745;
+    color: white;
+}
+
+form input[type="submit"][value="Criar conta"]:hover {
+    background-color: #1e7e34;
+}
+
+form:first-of-type input[type="submit"][value="Entrar"] {
+    background-color: #007bff;
+    color: white;
+}
+
+form:first-of-type input[type="submit"][value="Entrar"]:hover {
+    background-color: #0056b3;
+}
+
+form:last-of-type input[type="submit"][value="Criar conta"] {
+    background-color: #6c757d; 
+}
+form:last-of-type input[type="submit"][value="Criar conta"]:hover {
+    background-color: #5a6268;
+}
+
+form:last-of-type {
+    margin-top: 5px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}

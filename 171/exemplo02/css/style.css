@@ -1,0 +1,24 @@
+div{
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.box1{
+    background-color: lightskyblue;
+}
+
+.box2{
+    background-color: darkcyan;
+}
+
+.box3{
+    background-color: tomato;
+}
+
+#tag{
+    background-color: slateblue;
+    color:white;
+}
